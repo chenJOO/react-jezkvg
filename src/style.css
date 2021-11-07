@@ -1,0 +1,96 @@
+h1,
+p {
+  font-family: Lato;
+}
+div {
+  box-sizing: border-box;
+}
+
+@keyframes slide-down {
+  0% {
+    transform: scale(1, 0);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    -webkit-transform: scale(1, 0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+  }
+}
+
+.select-trigger {
+  position: relative;
+  padding-left: 10px;
+  width: 88px;
+  border-radius: 4px;
+  height: 35px;
+  line-height: 33px;
+  border: 1px solid #eee;
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.select-triggering {
+  box-shadow: 0 0 1px 1px rgb(156, 180, 231);
+}
+
+.dropdownIcon {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  background-color: #ddd;
+  border-right: 6px solid #fff;
+  border-left: 6px solid #fff;
+  border-top: 6px solid rgb(134, 132, 132);
+}
+
+.dropupIcon {
+  border-bottom: 6px solid rgb(134, 132, 132);
+  border-top: none;
+}
+
+.select-base {
+  list-style: none;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  width: 88px;
+}
+
+.select-show {
+  transition: height 0.3s ease-in;
+  transform-origin: 50% 0;
+  animation: slide-down 0.3s ease-in;
+}
+
+.select-hidden {
+  display: none;
+}
+
+.base-item {
+  padding-left: 10px;
+  width: 86px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.unselect-item {
+  background-color: #fff;
+  color: black;
+}
+
+.unselect-item:hover {
+  color: rgb(48, 226, 226);
+  background-color: #eee;
+  transition: all 0.3s;
+}
+
+.selected-item {
+  background-color: #eee;
+  color: rgb(48, 226, 226);
+}

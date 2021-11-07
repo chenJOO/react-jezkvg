@@ -77,6 +77,7 @@ div {
   width: 86px;
   height: 35px;
   line-height: 35px;
+  cursor: pointer;
 }
 
 .unselect-item {
